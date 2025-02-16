@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-body: "Oswald", "sans-serif";
+
+  --color-faq-purple: #3d236f;
+  --color-faq-purple-light: #8c6fc2;
+  --color-faq-gray: #4d4d4d;
+}

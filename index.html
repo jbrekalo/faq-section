@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Playground</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <main class="">
+      <div
+        id="modal__container"
+        class="absolute inset-0 h-screen w-screen bg-gray-700/70 hidden"
+      >
+        <div
+          class="modal__window relative m-auto top-1/2 -translate-y-1/2 bg-gray-100 max-w-2xl p-6 rounded-2xl"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="14"
+            width="10.5"
+            viewBox="0 0 384 512"
+            class="modal__window-close absolute right-4 top-4 cursor-pointer"
+          >
+            <path
+              fill="#8c6fc2"
+              d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
+            />
+          </svg>
+          <h3 class="text-2xl text-center mb-4 text-faq-purple font-body">
+            Create your FAQ
+          </h3>
+          <form
+            id="modal__form"
+            class="flex flex-col items-center gap-1.5"
+            action="submit"
+          >
+            <div class="w-full">
+              <p class="w-full text-left text-sm font-body">
+                Enter a Question:
+              </p>
+              <input
+                type="text"
+                name="Heading"
+                id="modal-input__question"
+                class="w-full pl-2 border-1 border-gray-500 rounded-sm focus:border-faq-purple"
+              />
+            </div>
+            <div class="w-full">
+              <p class="w-full text-left text-sm font-body">Enter an Answer:</p>
+              <input
+                type="text"
+                name="Text"
+                id="modal-input__answer"
+                class="w-full h-20 pl-2 border-1 border-gray-500 rounded-sm focus:border-faq-purple"
+              />
+            </div>
+            <button
+              class="px-10 py-2 rounded-sm text-white bg-faq-purple cursor-pointer"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+      <div
+        class="faq-section__wrapper grid grid-cols-[auto_1fr] max-w-250 gap-8 mx-auto mt-80 p-6 rounded-3xl bg-gray-50"
+      >
+        <div class="faq-section__image h-fit rounded-2xl overflow-hidden">
+          <img src="image.jpg" alt="abstract-image" class="max-w-xs" />
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="faq-section__dropdowns flex flex-col gap-2">
+            <!-- <div class="faq-section__dropdown">
+            <div class="faq-section__header">
+              <h3>FAQ Heading</h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="12"
+                width="7.5"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  fill="#ffffff"
+                  d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"
+                />
+              </svg>
+            </div>
+            <div class="faq-section__text">
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                sed diam voluptua. At vero eos et accusam et justo duo dolores
+                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                est Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div> -->
+          </div>
+          <div class="dropdown-new flex flex-col h-fit">
+            <div
+              class="dropdown-new__header flex justify-center items-center p-4 rounded-2xl border-dashed border-2 border-faq-purple-light cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="14"
+                width="12.25"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="#8c6fc2"
+                  d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="src/main.js"></script>
+  </body>
+</html>
